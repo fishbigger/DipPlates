@@ -8,8 +8,12 @@ function checkCode(e) {
     .then((res) => res.json())
     .then((data) => {
         country = data[code.toUpperCase()];
-        console.log (country);
 
-        result.textContent = country;
+        if (country == undefined) {
+          result.textContent = "Unknown"
+        } else {
+           result.textContent = country;
+        }
+
     });
 }
