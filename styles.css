@@ -1,0 +1,17 @@
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+input, label {
+  margin-block: 1em;
+}
+
+button, input{
+  width: 60%;
+}

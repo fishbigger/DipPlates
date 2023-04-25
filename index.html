@@ -2,16 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Dip Plate is That?</title>
+    <link rel="stylesheet" href="/styles.css">
     <script src="script.js" charset="utf-8"></script>
   </head>
   <body>
-    <form onsubmit="checkCode(event)">
-      <label for="code">2 Letter License Plate Code: </label>
-      <input type="text" id="code" name="code" placeholder="MG" required> <br>
-      <button type="submit" name="submit">Submit</button>
-    </form>
+    <div class="container">
+      <h1>What diplomatic plate is that?</h1>
+      <form onsubmit="checkCode(event)">
+        <label for="code">2 Letter License Plate Code: </label>
+        <input type="text" id="code" name="code" placeholder="MG" required> <br>
+        <button type="submit" name="submit">Submit</button>
+      </form>
 
-    <h1 id="result"></h1>
+      <h2 id="result"></h2>
+    </div>
   </body>
 </html>
