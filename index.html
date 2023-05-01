@@ -12,11 +12,17 @@
       <h1>What diplomatic plate is that?</h1>
       <form onsubmit="checkCode(event)">
         <label for="code">2 Letter License Plate Code: </label>
-        <input type="text" id="code" name="code" placeholder="MG" required> <br>
+        <input type="text" id="code" name="code" placeholder="MG"> <br>
+
+        <label for="country">Country: </label>
+        <input type="text" id="country" name="country" placeholder="United Kingdom"> <br>
+
         <button type="submit" name="submit">Submit</button>
       </form>
 
       <h2 id="result"></h2>
+      <h3 id="error" style="color: red;"></h3>
+
     </div>
   </body>
 </html>
